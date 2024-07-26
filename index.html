@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Case Converter</h1>
+        <p>Accidentally left the caps lock on and typed something, but can't be bothered to start again and retype it all?</p>
+        <p>Simply enter your text and choose the case you want to convert it to.</p>
+        <textarea id="inputText" placeholder="Enter your text here"></textarea>
+        <div class="buttons">
+            <button onclick="convertToSentence()">Sentence case</button>
+            <button onclick="convertToLower()">lower case</button>
+            <button onclick="convertToUpper()">UPPER CASE</button>
+            <button onclick="convertToCapitalized()">Capitalized Case</button>
+            <button onclick="convertToAlternating()">aLtErNaTiNg cAsE</button>
+            <button onclick="convertToTitle()">Title Case</button>
+            <button onclick="convertToInverse()">InVeRsE CaSe</button>
+        </div>
+        <textarea id="outputText" placeholder="Converted text will appear here"></textarea>
+        <div class="additional-buttons">
+            <button onclick="downloadText()">Download Text</button>
+            <button onclick="copyToClipboard()">Copy to Clipboard</button>
+            <button onclick="clearText()">Clear</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
